@@ -25,7 +25,9 @@ const buffers = []
     buffers.push(chunk)
   }
   const fullStreamContent = Buffer.concat(buffers).toString()
+
   console.log(fullStreamContent)
+  
   return res.end(fullStreamContent)
 
 })
